@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TicTacToe"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="MainWindow" Height="450" Width="800" WindowStartupLocation="CenterScreen">
+    <Grid Background="White">
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
             <ColumnDefinition/>
@@ -20,32 +20,31 @@
             <RowDefinition Height="109*"/>
             <RowDefinition Height="109*"/>
         </Grid.RowDefinitions>
-        <Button Content="Button" HorizontalAlignment="Center" Grid.Row="2" VerticalAlignment="Center" Width="180" Height="89"/>
-        <Button Grid.Column="1" Content="Button" HorizontalAlignment="Center" Grid.Row="2" VerticalAlignment="Center" Width="180" Height="89"/>
-        <Button Grid.Column="2" Content="Button" HorizontalAlignment="Center" Grid.Row="2" VerticalAlignment="Center" Width="180" Height="89"/>
-        <Button Content="Button" HorizontalAlignment="Center" Grid.Row="3" VerticalAlignment="Center" Width="180" Height="88"/>
-        <Button Grid.Column="1" Content="Button" HorizontalAlignment="Left" Margin="10,0,0,0" Grid.Row="3" VerticalAlignment="Center" Width="190" Height="88"/>
-        <Button Grid.Column="2" Content="Button" HorizontalAlignment="Center" Grid.Row="3" VerticalAlignment="Center" Width="180" Height="88"/>
-        <Button Content="Button" HorizontalAlignment="Center" Grid.Row="4" VerticalAlignment="Center" Width="180" Height="89"/>
-        <Button Grid.Column="1" Content="Button" HorizontalAlignment="Center" Grid.Row="4" VerticalAlignment="Center" Width="180" Height="89"/>
-        <Button Grid.Column="2" Content="Button" HorizontalAlignment="Center" Grid.Row="4" VerticalAlignment="Center" Width="180" Height="89"/>
-        <Label Content="Label" HorizontalAlignment="Left" Margin="25,0,0,0" VerticalAlignment="Top" Grid.Row="1" Width="52" Height="33"/>
-        <Label Content="Label" HorizontalAlignment="Left" Margin="25,38,0,0" VerticalAlignment="Top" Grid.Row="1" Width="52" Height="36" Grid.RowSpan="2"/>
-        <Label Grid.Column="2" Content="Label" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center" Grid.Row="1" RenderTransformOrigin="-0.543,0.536" Width="85" Height="26">
-        </Label>
-        <Label Grid.Column="3" Content="Label" HorizontalAlignment="Left" Margin="40,50,0,0" Grid.Row="2" VerticalAlignment="Top" RenderTransformOrigin="0.527,0.744"/>
-        <Label Grid.Column="3" Content="Label" HorizontalAlignment="Left" Margin="40,96,0,0" Grid.Row="2" VerticalAlignment="Top" RenderTransformOrigin="0.609,2.756" Grid.RowSpan="2"/>
-        <Label Grid.Column="3" Content="Label" HorizontalAlignment="Left" Margin="40,27,0,0" Grid.Row="3" VerticalAlignment="Top" RenderTransformOrigin="0.473,0.303"/>
-        <Button Grid.Column="3" Content="Button" HorizontalAlignment="Center" Margin="0,10,0,0" Grid.Row="4" VerticalAlignment="Top" Width="80" Height="35"/>
-        <Button Grid.Column="3" Content="Button" HorizontalAlignment="Center" Margin="0,55,0,0" Grid.Row="4" VerticalAlignment="Top" Width="80" Height="35"/>
-        <TextBox Grid.Column="3" HorizontalAlignment="Left" Margin="100,54,0,37" Grid.Row="2" TextWrapping="Wrap" Text="TextBox" Width="60"/>
-        <TextBox Grid.Column="3" HorizontalAlignment="Left" Margin="100,96,0,0" Grid.Row="2" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="60" Grid.RowSpan="2"/>
-        <TextBox Grid.Column="3" HorizontalAlignment="Left" Margin="100,31,0,0" Grid.Row="3" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="60"/>
-        <TextBox HorizontalAlignment="Left" Margin="82,0,0,46" TextWrapping="Wrap" Text="TextBox" Width="118" Grid.Row="1"/>
-        <TextBox HorizontalAlignment="Left" Margin="82,42,0,109" TextWrapping="Wrap" Text="TextBox" Width="118" Grid.Row="1" Grid.RowSpan="2"/>
-        <Button Grid.Column="1" Content="Button" HorizontalAlignment="Left" Margin="26,16,0,0" VerticalAlignment="Top" Grid.Row="1" Width="141" Height="35"/>
-        <TextBox HorizontalAlignment="Left" Margin="100,24,0,24" TextWrapping="Wrap" Text="TextBox" Width="61" Grid.Column="2" Grid.Row="1"/>
-        <Label Grid.Column="3" Content="Label" HorizontalAlignment="Center" Margin="0,10,0,0" Grid.Row="2" VerticalAlignment="Top" Width="120"/>
-        <Label Grid.Column="1" Content="Label" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Grid.RowSpan="2" Width="400" Height="24"/>
+        <Button x:Name="button1x1Grid" Content="" HorizontalAlignment="Center" Grid.Row="2" VerticalAlignment="Center" Width="180" Height="89" FontFamily="Calibri" FontSize="20" FontWeight="Bold" Background="#FFADDCF3" Click="button1x1Grid_Click"/>
+        <Button x:Name="button1x2Grid" Grid.Column="1" Content="" HorizontalAlignment="Center" Grid.Row="2" VerticalAlignment="Center" Width="180" Height="89" FontFamily="Calibri" FontSize="20" FontWeight="Bold" Background="#FF9FCCE2" Click="button1x2Grid_Click"/>
+        <Button x:Name="button1x3Grid" Grid.Column="2" Content="" HorizontalAlignment="Center" Grid.Row="2" VerticalAlignment="Center" Width="180" Height="89" FontFamily="Calibri" FontSize="20" FontWeight="Bold" Background="#FFA6D0E3" Click="button1x3Grid_Click"/>
+        <Button x:Name="button2x1Grid" Content="" HorizontalAlignment="Center" Grid.Row="3" VerticalAlignment="Center" Width="180" Height="88" FontFamily="Calibri" FontSize="20" FontWeight="Bold" Background="#FF9DCBE2" Click="button2x1Grid_Click"/>
+        <Button x:Name="button2x2Grid" Grid.Column="1" Content="" HorizontalAlignment="Left" Margin="10,0,0,0" Grid.Row="3" VerticalAlignment="Center" Width="190" Height="88" FontFamily="Calibri" FontSize="20" FontWeight="Bold" Background="#FFA7D0E3" Click="button2x2Grid_Click"/>
+        <Button x:Name="button2x3Grid" Grid.Column="2" Content="" HorizontalAlignment="Center" Grid.Row="3" VerticalAlignment="Center" Width="180" Height="88" FontFamily="Calibri" FontSize="20" FontWeight="Bold" Background="#FFB1D3E3" Click="button2x3Grid_Click"/>
+        <Button x:Name="button3x1Grid" Content="" HorizontalAlignment="Center" Grid.Row="4" VerticalAlignment="Center" Width="180" Height="89" FontFamily="Calibri" FontSize="20" FontWeight="Bold" Background="#FFB0D1E2" Click="button3x1Grid_Click"/>
+        <Button x:Name="button3x2Grid" Grid.Column="1" Content="" HorizontalAlignment="Center" Grid.Row="4" VerticalAlignment="Center" Width="180" Height="89" FontFamily="Calibri" FontSize="20" FontWeight="Bold" Background="#FFACD5E9" Click="button3x2Grid_Click"/>
+        <Button x:Name="button3x3Grid" Grid.Column="2" Content="" HorizontalAlignment="Center" Grid.Row="4" VerticalAlignment="Center" Width="180" Height="89" FontFamily="Calibri" FontSize="20" FontWeight="Bold" Background="#FFB3D7E8" Click="button3x3Grid_Click"/>
+        <Label x:Name="labelXPlayer" Content="X Player" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top" Grid.Row="1" Width="67" Height="33" FontFamily="Calibri" FontSize="16" FontWeight="Bold"/>
+        <Label x:Name="labelOPlayer" Content="O Player" HorizontalAlignment="Left" Margin="10,38,0,0" VerticalAlignment="Top" Grid.Row="1" Width="67" Height="36" Grid.RowSpan="2" FontFamily="Calibri" FontSize="16" FontWeight="Bold"/>
+        <Label x:Name="labelCurrentPlayer" Grid.Column="2" Content="Current Player" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Row="1" Width="119" Height="38" FontFamily="Calibri" FontSize="16" FontWeight="Bold" VerticalContentAlignment="Center" Margin="53,16,0,0"/>
+        <Label x:Name="labelXWins" Grid.Column="3" Content="X" HorizontalAlignment="Left" Margin="40,50,0,30" Grid.Row="2" RenderTransformOrigin="0.527,0.744" FontFamily="Calibri" FontSize="16" FontWeight="Bold" HorizontalContentAlignment="Center" Width="45"/>
+        <Label x:Name="labelOWins" Grid.Column="3" Content="O" HorizontalAlignment="Left" Margin="41,84,0,0" Grid.Row="2" VerticalAlignment="Top" RenderTransformOrigin="0.609,2.756" Grid.RowSpan="2" FontFamily="Calibri" FontSize="16" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="45"/>
+        <Label x:Name="labelDraws" Grid.Column="3" Content="Draws" HorizontalAlignment="Left" Margin="41,12,0,0" Grid.Row="3" VerticalAlignment="Top" RenderTransformOrigin="0.473,0.303" FontFamily="Calibri" FontSize="14" FontWeight="Bold"/>
+        <Button x:Name="buttonReset" Grid.Column="3" Content="_Reset" HorizontalAlignment="Center" Margin="0,10,0,0" Grid.Row="4" VerticalAlignment="Top" Width="120" Height="35" FontFamily="Calibri" FontSize="14" FontWeight="Bold" ToolTip="Click to reset the gameboard" TabIndex="8" Background="#FFC4C9CC" IsCancel="True" Click="buttonReset_Click"/>
+        <Button x:Name="buttonExit" Grid.Column="3" Content="E_xit" HorizontalAlignment="Center" Margin="0,55,0,0" Grid.Row="4" VerticalAlignment="Top" Width="120" Height="35" FontFamily="Calibri" FontSize="14" FontWeight="Bold" ToolTip="Click to exit the game" TabIndex="9" Background="#FFC3D2DA" Click="buttonExit_Click"/>
+        <TextBox x:Name="textXWins" Grid.Column="3" HorizontalAlignment="Left" Margin="100,50,0,0" Grid.Row="2" TextWrapping="Wrap" Width="60" FontFamily="Calibri" FontWeight="Bold" Height="20" VerticalAlignment="Top" ToolTip="Displays the number of wins of Player X" TabIndex="5"/>
+        <TextBox x:Name="textOWins" Grid.Column="3" HorizontalAlignment="Left" Margin="100,84,0,0" Grid.Row="2" TextWrapping="Wrap" VerticalAlignment="Top" Width="60" FontFamily="Calibri" FontWeight="Bold" ToolTip="Displays the number of wins of Player O" TabIndex="6" TextAlignment="Center" Height="20"/>
+        <TextBox x:Name="textDraws" Grid.Column="3" HorizontalAlignment="Left" Margin="100,12,0,0" Grid.Row="3" TextWrapping="Wrap" VerticalAlignment="Top" Width="60" FontFamily="Calibri" FontWeight="Bold" ToolTip="Displays the number of draws" TabIndex="7" TextAlignment="Center" Height="20"/>
+        <TextBox x:Name="TextPlayerXName" HorizontalAlignment="Left" Margin="82,0,0,46" TextWrapping="Wrap" Width="108" Grid.Row="1" FontFamily="Calibri" FontWeight="Bold" ToolTip="Click to enter name of Player X" TabIndex="1" TextAlignment="Center" TextChanged="TextPlayerXName_TextChanged"/>
+        <TextBox x:Name="TextPlayerOName" HorizontalAlignment="Left" Margin="82,42,0,109" TextWrapping="Wrap" Width="108" Grid.Row="1" Grid.RowSpan="2" FontFamily="Calibri" FontWeight="Bold" ToolTip="Click to enter name of Player O" TabIndex="2" TextChanged="TextPlayerOName_TextChanged"/>
+        <Button x:Name="buttonChoosePlayer" Grid.Column="1" Content="Choose _Starting Player" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1" Width="157" Height="54" FontFamily="Calibri" FontSize="16" FontWeight="Bold" ScrollViewer.CanContentScroll="True" ToolTip="Click to randomize the first player" TabIndex="3" Background="#FFC5D0D6" IsDefault="True" Click="buttonChoosePlayer_Click"/>
+        <TextBox x:Name="textCurrentPlayerName" HorizontalAlignment="Left" Margin="172,24,0,24" TextWrapping="Wrap" Width="114" Grid.Column="2" Grid.Row="1" FontFamily="Calibri" FontWeight="Bold" Grid.ColumnSpan="2" ToolTip="Displays the name of the current player" TabIndex="4" RenderTransformOrigin="0.827,0.646"/>
+        <Label x:Name="labelScore" Grid.Column="3" Content="Score" HorizontalAlignment="Center" Margin="0,10,0,0" Grid.Row="2" VerticalAlignment="Top" Width="120" FontFamily="Calibri" FontSize="18" FontWeight="Bold" HorizontalContentAlignment="Center"/>
+        <Label x:Name="labelTitle" Grid.Column="1" Content="Tic Tac Toe" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.ColumnSpan="2" Width="400" Height="34" FontFamily="Calibri" FontSize="22" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
     </Grid>
 </Window>
