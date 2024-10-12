@@ -172,10 +172,17 @@ namespace TicTacToe
             // the program trying to call ToString for a null value
             // ToString() - converts button content to string
 
-
+            // Checks each row to see if all three buttons in that row contain the same non-null
+            // value. If yes then returns true (as it is a win)
+            // For loop iterates over all the rows in the board awway
+            // starts the index at row 0 by using int row= RowZero (initialization)
+            // row < RowThree ensures the loop continues until row is less than RowThre (so will loop through rows 0, 1 and 2)
+            // row++ will increment the row variable by 1 after each iteration and to move to the next row
             for (int row = RowZero; row < RowThree; row++)
             {
-
+                // checks if the value in the first column of the current row is not null
+                // Then continues to see if all the the other columns of that row are also NOT NULL and have the SAME VALUE as the first or not
+                // So checks if the first cell is null or not AND checks if the three cells of that row are equal to one another (also non null and have the same value or not)
                 if (board[row, RowZero] != null && board[row, RowZero] == board[row, RowOne] && board[row, RowOne] == board[row, RowTwo])
                 {
                     // If three buttons in a row have the same value then returns true
