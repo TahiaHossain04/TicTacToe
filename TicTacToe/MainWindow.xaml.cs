@@ -94,7 +94,7 @@ namespace TicTacToe
             }
 
             // Casts the sender object to a button type 
-            Button clickedButton = sender as Button;
+            Button clickedButton = sender as Button; //ref:https://stackoverflow.com/questions/11387070/recognizing-sender-button-control-in-click-event
 
             // Check if the clicked button is empty or not
             if (clickedButton.Content != null)
@@ -228,6 +228,9 @@ namespace TicTacToe
                    button3x1Grid.Content != null && button3x2Grid.Content != null && button3x3Grid.Content != null;
         }
 
+        // References:https://stackoverflow.com/questions/21369135/tic-tac-toe-help-determine-winner
+        // https://www.reddit.com/r/learncsharp/comments/1ed1deo/checking_for_a_win_in_tictactoe/
+        // https://www.c-sharpcorner.com/UploadFile/75a48f/tic-tac-toe-game-in-C-Sharp/ (code lines 183 to 229)
 
         // Resets all the buttons of the game to their initial state
         private void ClearBoard()
