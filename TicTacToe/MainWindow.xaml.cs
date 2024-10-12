@@ -79,18 +79,7 @@ namespace TicTacToe
                 return; 
             }
 
-            // Casts the sender object to a button type ??
-            // type-Button
-            // clickedButton is the variable that holds the casted object
-            // sender is the event source (button in this case)
-            // as operator is safe cast
-            // Button- target type to cast the sender to
-            // TargetType variableName = objectToCast as TargetType;
-            // If sender is indeed a Button, clickedButton will reference that button.
-            // Sender represents the object that raised the event (usually in events this is button)
-            // as- attempts to cast sender to button type
-            // sender- parameter of type object that refers to the object that raised the event
-            // (button is clicked sender is the button that was clicked)
+            // Casts the sender object to a button type 
             Button clickedButton = sender as Button;
 
             // Check if the clicked button is empty or not
@@ -112,14 +101,14 @@ namespace TicTacToe
                 {
                     playerXWins++; // Increment X's wins
                     textXWins.Text = $"{playerXWins}"; // Immediately update the text box
-                    MessageBox.Show($"{PlayerX} wins!"); // Show a message box showing who won
+                    MessageBox.Show($"{TextPlayerXName.Text}({PlayerX}) wins!"); // Show a message box showing who won
                 }
                 // But if the winer is Player O
                 else
                 {
                     playerOWins++; // Increment O's wins
                     textOWins.Text = $"{playerOWins}"; // Immediately update the text box
-                    MessageBox.Show($"{PlayerO} wins!");
+                    MessageBox.Show($"{TextPlayerOName.Text}({PlayerO}) wins!");
                 }
 
                 // Calls this method to clear the board after the game is won by someone
