@@ -70,6 +70,13 @@ namespace TicTacToe
             Button_Click(sender, e);
             // Sets the current player to be "X" and shows the symbol when user clicks Start Game button
             textCurrentPlayerName.Text = $"{currentPlayer}";
+            // Disables the player text names after game has started
+            TextPlayerXName.IsEnabled = false;
+            TextPlayerOName.IsEnabled = false;
+            // Sets the scoreboard to zero values
+            textXWins.Text = $"{Zero}";
+            textOWins.Text = $"{Zero}";
+            textDraws.Text = $"{Zero}";
         }
 
 
@@ -107,14 +114,14 @@ namespace TicTacToe
                 {
                     playerXWins++; // Increment X's wins
                     textXWins.Text = $"{playerXWins}"; // Immediately update the text box
-                    MessageBox.Show($"{TextPlayerXName.Text}({PlayerX}) wins!"); // Show a message box showing who won
+                    MessageBox.Show($"{TextPlayerXName.Text} ({PlayerX}) wins!"); // Show a message box showing who won
                 }
                 // But if the winer is Player O
                 else
                 {
                     playerOWins++; // Increment O's wins
                     textOWins.Text = $"{playerOWins}"; // Immediately update the text box
-                    MessageBox.Show($"{TextPlayerOName.Text}({PlayerO}) wins!");
+                    MessageBox.Show($"{TextPlayerOName.Text} ({PlayerO}) wins!");
                 }
 
                 // Calls this method to clear the board after the game is won by someone
@@ -165,13 +172,13 @@ namespace TicTacToe
             // the program trying to call ToString for a null value
             // ToString() - converts button content to string
 
-            // Checks each row to see if all three buttons in that row contain the same non-null
-            // value. If yes then returns true (as it is a win)
+
             for (int row = RowZero; row < RowThree; row++)
             {
+
                 if (board[row, RowZero] != null && board[row, RowZero] == board[row, RowOne] && board[row, RowOne] == board[row, RowTwo])
                 {
-                    // If three buttons in a row have the same value then returnt true
+                    // If three buttons in a row have the same value then returns true
                     return true;
                 }
             }

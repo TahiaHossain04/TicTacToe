@@ -29,23 +29,23 @@
         
         <!--Buttons for the main game-->
         <Button x:Name="button1x1Grid" HorizontalAlignment="Center" Grid.Row="2" VerticalAlignment="Center" Width="180" Height="89" 
-                FontFamily="Calibri" FontSize="20" FontWeight="Bold" Background="#FFADDCF3" Click="Button_Click"/>
+                FontFamily="Calibri" FontSize="30" FontWeight="Bold" Background="#FFADDCF3" Click="Button_Click"/>
         <Button x:Name="button1x2Grid" Grid.Column="1" HorizontalAlignment="Center" Grid.Row="2" VerticalAlignment="Center" Width="180" Height="89" 
-                FontFamily="Calibri" FontSize="20" FontWeight="Bold" Background="#FF9FCCE2" Click="Button_Click"/>
+                FontFamily="Calibri" FontSize="30" FontWeight="Bold" Background="#FF9FCCE2" Click="Button_Click"/>
         <Button x:Name="button1x3Grid" Grid.Column="2" HorizontalAlignment="Center" Grid.Row="2" VerticalAlignment="Center" Width="180" Height="89" 
-                FontFamily="Calibri" FontSize="20" FontWeight="Bold" Background="#FFA6D0E3" Click="Button_Click"/>
+                FontFamily="Calibri" FontSize="30" FontWeight="Bold" Background="#FFA6D0E3" Click="Button_Click"/>
         <Button x:Name="button2x1Grid" HorizontalAlignment="Center" Grid.Row="3" VerticalAlignment="Center" Width="180" Height="88" 
-                FontFamily="Calibri" FontSize="20" FontWeight="Bold" Background="#FF9DCBE2" Click="Button_Click"/>
+                FontFamily="Calibri" FontSize="30" FontWeight="Bold" Background="#FF9DCBE2" Click="Button_Click"/>
         <Button x:Name="button2x2Grid" Grid.Column="1" HorizontalAlignment="Left" Margin="10,0,0,0" Grid.Row="3" VerticalAlignment="Center" Width="190" Height="88"
-                FontFamily="Calibri" FontSize="20" FontWeight="Bold" Background="#FFA7D0E3" Click="Button_Click"/>
+                FontFamily="Calibri" FontSize="30" FontWeight="Bold" Background="#FFA7D0E3" Click="Button_Click"/>
         <Button x:Name="button2x3Grid" Grid.Column="2" HorizontalAlignment="Center" Grid.Row="3" VerticalAlignment="Center" Width="180" Height="88"
-                FontFamily="Calibri" FontSize="20" FontWeight="Bold" Background="#FFB1D3E3" Click="Button_Click"/>
+                FontFamily="Calibri" FontSize="30" FontWeight="Bold" Background="#FFB1D3E3" Click="Button_Click"/>
         <Button x:Name="button3x1Grid" HorizontalAlignment="Center" Grid.Row="4" VerticalAlignment="Center" Width="180" Height="89"
-                FontFamily="Calibri" FontSize="20" FontWeight="Bold" Background="#FFB0D1E2" Click="Button_Click"/>
+                FontFamily="Calibri" FontSize="30" FontWeight="Bold" Background="#FFB0D1E2" Click="Button_Click"/>
         <Button x:Name="button3x2Grid" Grid.Column="1" HorizontalAlignment="Center" Grid.Row="4" VerticalAlignment="Center" Width="180" Height="89"
-                FontFamily="Calibri" FontSize="20" FontWeight="Bold" Background="#FFACD5E9" Click="Button_Click"/>
+                FontFamily="Calibri" FontSize="31" FontWeight="Bold" Background="#FFACD5E9" Click="Button_Click"/>
         <Button x:Name="button3x3Grid" Grid.Column="2" HorizontalAlignment="Center" Grid.Row="4" VerticalAlignment="Center" Width="180" Height="89" 
-                FontFamily="Calibri" FontSize="20" FontWeight="Bold" Background="#FFB3D7E8" Click="Button_Click"/>
+                FontFamily="Calibri" FontSize="30" FontWeight="Bold" Background="#FFB3D7E8" Click="Button_Click"/>
 
         <!--Labels for Player Names and Score Board-->
         <Label x:Name="labelXPlayer" Content="X Player" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top" Grid.Row="1" Width="67" Height="33" 
@@ -82,7 +82,7 @@
                  FontFamily="Calibri" FontWeight="Bold" ToolTip="Click to enter name of Player O" TabIndex="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
         
         <!--Start Game Button-->
-        <Button x:Name="buttonStartGame" Grid.Column="1" Content="Start _Game" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1" Width="180" Height="42" FontFamily="Calibri" FontSize="16" FontWeight="Bold" ToolTip="Click to start the game" TabIndex="3" Background="#FFC5D0D6" IsDefault="True" Click="buttonStartGame_Click"/>
+        <Button x:Name="buttonStartGame" Grid.Column="1" Content="Start _Game" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1" Width="120" Height="42" FontFamily="Calibri" FontSize="16" FontWeight="Bold" ToolTip="Click to start the game" TabIndex="3" Background="#FFC5D0D6" IsDefault="True" Click="buttonStartGame_Click"/>
 
         <!--Text Box for Current Player-->
         <TextBox x:Name="textCurrentPlayerName" HorizontalAlignment="Left" Margin="172,24,0,24" TextWrapping="Wrap" Width="114" Grid.Column="2" Grid.Row="1" 
