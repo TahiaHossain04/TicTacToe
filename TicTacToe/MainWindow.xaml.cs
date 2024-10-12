@@ -23,6 +23,7 @@ namespace TicTacToe
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     
+    // Class Declaration
     public partial class MainWindow : Window
     {
         // Variables
@@ -55,7 +56,7 @@ namespace TicTacToe
         private const int ColTwo = 2;
         private const int ColThree = 3;
 
-        // Start
+        // Constructor
         public MainWindow()
         {
             InitializeComponent();
@@ -159,30 +160,30 @@ namespace TicTacToe
         // Checks if the board has a winner
         private bool CheckForWinner()
         {
+            // Reference: https://chatgpt.com/ line 165 to 172
+
             // Declare a 2D array called board which has 3 rows and 3 columns 
             string[,] board = new string[RowThree, RowThree]
+            // string [,]  - 2D array of stringsn (, representes the multiple dimension of array (,, is for 3 dimensions))
+            // board       - Name of the array variable        
+
             // The current content of the 2D array is intialized below
             {
         { button1x1Grid.Content?.ToString(), button1x2Grid.Content?.ToString(), button1x3Grid.Content?.ToString() },
         { button2x1Grid.Content?.ToString(), button2x2Grid.Content?.ToString(), button2x3Grid.Content?.ToString() },
         { button3x1Grid.Content?.ToString(), button3x2Grid.Content?.ToString(), button3x3Grid.Content?.ToString() }
             }; 
-            // .Content - retrieved the content of the button
-            // >. - null conditional operator. If content is null, this operator prevents
+            // .Content - retrieves the content of the button (X, O or null)
+            // ?. - null conditional operator. If content is null, this operator prevents
             // the program trying to call ToString for a null value
             // ToString() - converts button content to string
 
             // Checks each row to see if all three buttons in that row contain the same non-null
             // value. If yes then returns true (as it is a win)
-            // For loop iterates over all the rows in the board awway
-            // starts the index at row 0 by using int row= RowZero (initialization)
-            // row < RowThree ensures the loop continues until row is less than RowThre (so will loop through rows 0, 1 and 2)
-            // row++ will increment the row variable by 1 after each iteration and to move to the next row
             for (int row = RowZero; row < RowThree; row++)
             {
-                // checks if the value in the first column of the current row is not null
+                // Checks if the value in the first column of the current row is not null
                 // Then continues to see if all the the other columns of that row are also NOT NULL and have the SAME VALUE as the first or not
-                // So checks if the first cell is null or not AND checks if the three cells of that row are equal to one another (also non null and have the same value or not)
                 if (board[row, RowZero] != null && board[row, RowZero] == board[row, RowOne] && board[row, RowOne] == board[row, RowTwo])
                 {
                     // If three buttons in a row have the same value then returns true
