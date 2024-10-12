@@ -184,7 +184,7 @@ namespace TicTacToe
             {
                 // Checks if the value in the first column of the current row is not null
                 // Then continues to see if all the the other columns of that row are also NOT NULL and have the SAME VALUE as the first or not
-                if (board[row, RowZero] != null && board[row, RowZero] == board[row, RowOne] && board[row, RowOne] == board[row, RowTwo])
+                if (board[row, ColZero] != null && board[row, ColZero] == board[row, ColOne] && board[row, ColOne] == board[row, ColTwo])
                 {
                     // If three buttons in a row have the same value then returns true
                     return true;
@@ -194,7 +194,7 @@ namespace TicTacToe
             // Check columns the same way
             for (int col = ColZero; col < ColThree; col++)
             {
-                if (board[ColZero, col] != null && board[ColZero, col] == board[ColOne, col] && board[ColOne, col] == board[ColTwo, col])
+                if (board[RowZero, col] != null && board[RowZero, col] == board[RowOne, col] && board[RowOne, col] == board[RowTwo, col])
                 {
                     // If three buttons in a column have the same value then returnt true
                     return true;
