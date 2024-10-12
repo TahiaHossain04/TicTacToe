@@ -160,7 +160,7 @@ namespace TicTacToe
         // Checks if the board has a winner
         private bool CheckForWinner()
         {
-            // Reference: https://chatgpt.com/ line 165 to 172
+            // Reference: https://chatgpt.com/ line 165 to 175
 
             // Declare a 2D array called board which has 3 rows and 3 columns 
             string[,] board = new string[RowThree, RowThree]
