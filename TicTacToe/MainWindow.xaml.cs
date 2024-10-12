@@ -43,11 +43,17 @@ namespace TicTacToe
         private const int Zero = 0;
         private const string Empty = " ";
 
-        // Rows and Column indexes (named only as Rows but used in columns as well)
+        // Rows 
         private const int RowZero = 0;
         private const int RowOne = 1;
         private const int RowTwo = 2;
         private const int RowThree = 3;
+
+        // Columns
+        private const int ColZero = 0;
+        private const int ColOne = 1;
+        private const int ColTwo = 2;
+        private const int ColThree = 3;
 
         // Start
         public MainWindow()
@@ -171,9 +177,9 @@ namespace TicTacToe
             }
 
             // Check columns the same way
-            for (int col = RowZero; col < RowThree; col++)
+            for (int col = ColZero; col < ColThree; col++)
             {
-                if (board[RowZero, col] != null && board[RowZero, col] == board[RowOne, col] && board[RowOne, col] == board[RowTwo, col])
+                if (board[ColZero, col] != null && board[ColZero, col] == board[ColOne, col] && board[ColOne, col] == board[ColTwo, col])
                 {
                     // If three buttons in a column have the same value then returnt true
                     return true;
@@ -182,13 +188,13 @@ namespace TicTacToe
 
             // Check diagonals for a winner
             // For first diagonal (0,1), (1,1) (2,2) if values are same and not null
-            if (board[RowZero, RowZero] != null && board[RowZero, RowZero] == board[RowOne, RowOne] && board[RowOne, RowOne] == board[RowTwo, RowTwo])
+            if (board[RowZero, ColZero] != null && board[RowZero, ColZero] == board[RowOne, ColOne] && board[RowOne, ColOne] == board[RowTwo, ColTwo])
             {
                 // If the three buttons in the diagonal have the same values then return true
                 return true;
             }
             // For first diagonal (0,2), (1,1) (2,0) if values are same and not null
-            if (board[RowZero, RowTwo] != null && board[RowZero, RowTwo] == board[RowOne, RowOne] && board[RowOne, RowOne] == board[RowTwo, RowZero])
+            if (board[RowZero, ColTwo] != null && board[RowZero, ColTwo] == board[RowOne, ColOne] && board[RowOne, ColOne] == board[RowTwo, ColZero])
             {
                 // If the three buttons in the diagonal have the same values then return true
                 return true; 
